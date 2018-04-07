@@ -1,0 +1,112 @@
+body {
+	background-image: url("img/city_vector.jpg");
+
+	/*Resize the background image to cover the entire container,
+	 even if it has to stretch the image or cut a little bit off one of the edges*/
+	background-size: cover;
+	background-position: center;
+
+	/*determines if the image is repeated*/
+	background-repeat: no-repeat;
+
+	/*set the left and right margins to auto to horizontally center that element 
+		within its container. The element will take up the width you specify, 
+		then the remaining space will be split evenly between the two margins.*/
+	margin: 0 auto;
+
+	/*color of text*/
+	color: white;
+
+	/* What is The Viewport?
+		The viewport is the user's visible area of a web page.
+		Viewport Height (vh) – A percentage of the full viewport height. 
+		10vh will resolve to 10% of the current viewport height.*/
+	min-height: 100vh;
+}
+
+.container {
+	/*red, green, blue, alpha - it will create a half transparent
+		blue color
+		we are creating an overlay to our picture*/
+	background-color: rgba(31, 34, 118, 0.5);
+	min-height: 100vh;
+	min-width: 100vw;
+	/*top: 0;
+	bottom: 0;
+	position: absolute;*/
+}
+
+.navbar {
+	background-color: rgb(69, 106, 171);
+}
+
+.navbar a {
+	color: white;
+	font-size: 25px;
+}
+
+.weather {
+	/*
+		Px : px is unit of the screen.
+		Em : em is unit that contains parental element of pixel size.
+		Rem : rem is unit that contains root element (default) of pixel size.
+	*/
+
+	border: 1px solid white;
+
+	/*
+		Rem depends on default browser or html property sizing. 
+		This is not fixed element because it depends on measurement so when 
+		the parental measurement change, the value of the rem is changed. 
+		You can change the default browser font size from settings of that 
+		particular browser.
+		Example:
+		Suppose browser default font-size is 14px.
+		1rem = 14px	
+	*/
+	margin-top: 10rem;
+	background-color: rgba(0,0,0,0.5);
+
+	/*Make round edges*/
+	border-radius: 20px;
+}
+
+#icon-desc {
+	font-size: 5rem;
+	padding-top: 2rem;
+}
+
+#text-desc {
+	font-size: 2rem;
+	padding-top: 1rem;
+}
+
+#temperature {
+	font-size: 7rem;
+}
+
+#icon-thermometer {
+	font-size: 5rem;
+}
+
+.humidity, .wind-speed, .visibility {
+	border-top: 1px solid white;
+	font-size: 1.5rem;
+}
+
+.humidity-data, .wind-speed-data, .visibility-data {
+	border-top: 1px solid white;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
